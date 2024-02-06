@@ -112,8 +112,8 @@ const Main = () => {
                         {/* <canvas id="myAreaChart"></canvas> */}
                         {/* <Line options={options} data={data} /> */}
                         <LineChart
-                            width={1150}
-                            height={500}
+                            width={750}
+                            height={300}
                             data={datas}
                             margin={{
                                 top: 5,
@@ -140,8 +140,8 @@ const Main = () => {
                     </div>
                     <div className='pl-[35px]'>
 
-                        <PieComponent />
-
+                        {/* <PieComponent /> */}
+                        <canvas id="myBarChart"></canvas>
                         {
 
                         }
