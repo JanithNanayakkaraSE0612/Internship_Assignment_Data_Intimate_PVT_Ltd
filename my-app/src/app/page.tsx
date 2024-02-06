@@ -1,9 +1,22 @@
-import Image from "next/image";
+import SideBar from '@/components/Sidebar'
+import Dashboardview from '@/components/Dashboardview'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      
+    <main className="">
+         <div className="flex overflow-scroll ">
+        <div className="basis-[12%] h-[100vh]">
+          <SideBar />
+        </div>
+        <div className="basis-[88%] border overflow-scroll h-[100vh]">
+          {/* <Dashboardview /> */}
+          <div>
+            {/* <Outlet></Outlet> */}
+          </div>
+        </div>
+
+
+      </div>
     </main>
   );
 }
