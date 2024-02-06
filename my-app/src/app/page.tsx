@@ -1,4 +1,5 @@
 import SlideBar from "../components/SlideBar"
+import Dashboardview from "../components/DashboardView";
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
         <SlideBar />
       </div>
       <div className="basis-[88%] border overflow-scroll h-[100vh]">
-        {/* <Dashboardview /> */}
+          <Dashboardview /> 
         <div>
           {/* <Outlet></Outlet> */}
         </div>
