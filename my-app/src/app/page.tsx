@@ -9,7 +9,7 @@ export default function Home() {
           <SideBar />
         </div>
         <div className="basis-[88%] border overflow-scroll h-[100vh]">
-          {/* <Dashboardview /> */}
+          <Dashboardview />
           <div>
             {/* <Outlet></Outlet> */}
           </div>

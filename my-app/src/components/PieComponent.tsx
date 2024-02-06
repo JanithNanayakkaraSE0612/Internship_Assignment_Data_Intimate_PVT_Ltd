@@ -73,17 +73,3 @@ const PieComponent = () => {
 export default PieComponent
 
 
-
-
-
-
-
-// export default class Example extends PureComponent {
-//     static demoUrl = 'https://codesandbox.io/s/pie-chart-with-customized-label-dlhhj';
-
-//     render() {
-//         return (
-           
-//         );
-//     }
-// }

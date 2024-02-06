@@ -189,7 +189,7 @@ const Main = () => {
                     </div>
                     <div className='pl-[35px] flex items-center justify-center h-[100%]'>
                         <div>
-                            <img src={error} alt="" className='transform scale-[135%]' />
+                            {/* <img src={error} alt="" className='transform scale-[135%]' /> */}
                             <p className='mt-[15px] text-semibold text-gray-500'>No data available</p>
                         </div>
                     </div>

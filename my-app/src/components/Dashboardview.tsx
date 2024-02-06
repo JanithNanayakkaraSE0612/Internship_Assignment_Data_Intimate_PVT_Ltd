@@ -1,6 +1,8 @@
+"use client"; 
 import React ,{useState} from "react"
 import { FaSearch, FaEnvelope, FaRegBell } from "react-icons/fa"
 import profile from "@/assets/profile.png"
+import Main from "./Main";
 
 const Dashboardview = () => {
     const [open, setOpen] = useState(false)
@@ -46,7 +48,9 @@ const Dashboardview = () => {
                     </div>
                 </div>
             </div>
+            <Main/>
         </div>
+       
     )
 }
 
