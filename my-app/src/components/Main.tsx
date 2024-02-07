@@ -157,23 +157,23 @@ const Main = () => {
                     <div className='px-[25px] space-y-[15px] py-[15px]'>
                         <div>
                             <h2>Server Migration</h2>
-                            <Progress percent={30} strokeColor="#E74A3B" />
+                            <Progress percent={20} strokeColor="#E74A3B" />
                         </div>
                         <div>
                             <h2>Sales Tracking</h2>
-                            <Progress percent={50} status="active" strokeColor="#F6C23E" />
+                            <Progress percent={40} status="active" strokeColor="#F6C23E" />
                         </div>
                         <div>
                             <h2>Customer Database</h2>
-                            <Progress percent={70} status="active" strokeColor="#4E73DF" />
+                            <Progress percent={60} status="active" strokeColor="#4E73DF" />
                         </div>
                         <div>
                             <h2>Payout Details</h2>
-                            <Progress percent={100} strokeColor="#36B9CC" />
+                            <Progress percent={80} strokeColor="#36B9CC" />
                         </div>
                         <div>
                             <h2>Account Setup</h2>
-                            <Progress percent={50} status="exception" strokeColor="#1CC88A" />
+                            <Progress percent={100} status="success" strokeColor="#1CC88A" />
                         </div>
                     </div>
 
@@ -184,19 +184,22 @@ const Main = () => {
                 </div>
                 <div className='basis-[45%] border bg-white shadow-md cursor-pointer rounded-[4px]'>
                     <div className='bg-[#F8F9FC] flex items-center justify-between py-[15px] px-[20px] border-b-[1px] border-[#EDEDED]'>
-                        <h2 className='text-[#4e73df] text-[16px] leading-[19px] font-bold'> Resources</h2>
+                        <h2 className='text-[#4e73df] text-[16px] leading-[19px] font-bold'> Illustrations</h2>
                         <FaEllipsisV color="gray" className='cursor-pointer' />
                     </div>
                     <div className='pl-[35px] flex items-center justify-center h-[100%]'>
                         <div>
                             {/* <img src={error} alt="" className='transform scale-[135%]' /> */}
-                            <p className='mt-[15px] text-semibold text-gray-500'>No data available</p>
+                            <p className='mt-[35px] text-semibold text-gray-500 mb-5' >Add some quality, svg illustrations to your 
+                            project courtesy of unDraw, a constantly updated collection of beautiful svg images that you can use
+                             completely free and without attribution!</p>
+                             <a className='text-blue-600' href="https://undraw.co/">Browse Illustrations on unDraw →</a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div className='flex mt-[22px] w-full gap-[30px]'>
+            <div className='flex mt-[22px] h-full w-full gap-[30px]'>
                 <div className='basis-[55%] cursor-pointer rounded-[4px]'>
                 <div className="col-lg-6 mb-4">
                                     <div className="bg-[#4e73df] h-20 w-5/12 rounded-[4px] shadow-md">
@@ -263,6 +266,22 @@ const Main = () => {
                               </div>
                           </div>
                       </div>
+                </div>
+                <div className='basis-[45%] border bg-white shadow-md cursor-pointer rounded-[4px]'>
+                    <div className='bg-[#F8F9FC] flex items-center justify-between py-[15px] px-[20px] border-b-[1px] border-[#EDEDED]'>
+                        <h2 className='text-[#4e73df] text-[16px] leading-[19px] font-bold'> Development Approach</h2>
+                        <FaEllipsisV color="gray" className='cursor-pointer' />
+                    </div>
+                    <div className='pl-[35px] flex items-center justify-center h-[100%]'>
+                        <div>
+                            <p className='text-semibold text-gray-500 mb-5' >SB Admin 2 makes extensive use of Bootstrap 4 utility
+                             classes in order to reduce CSS bloat and poor page performance. Custom CSS classes are used to create custom 
+                             components and custom utility classes.</p>
+                             <p className='mt-[35px] text-semibold text-gray-500 mb-5' >Before working with this theme, you should become
+                              familiar with the Bootstrap framework, especially the utility classes.</p>
+                            
+                        </div>
+                    </div>
                 </div>
             </div>
 
