@@ -1,7 +1,7 @@
 "use client"; 
 import React ,{useState} from "react"
 import { FaSearch, FaEnvelope, FaRegBell } from "react-icons/fa"
-import profile from "@/assets/profile.png"
+// import profile from "@/assets/profile3.avif"
 import Main from "./Main";
 
 const Dashboardview = () => {
@@ -29,7 +29,7 @@ const Dashboardview = () => {
                     <div className='flex items-center gap-[15px] relative' onClick={showProfile} >
                         <p>Douglas McGee</p>
                         <div className='h-[50px] w-[50px] rounded-full bg-[#4E73DF] cursor-pointer flex items-center justify-center relative z-40' >
-                            {/* <img src={profile} alt="" /> */}
+                            {/* <img src={profile} alt="profile"/> */}
 
                         </div>
 
