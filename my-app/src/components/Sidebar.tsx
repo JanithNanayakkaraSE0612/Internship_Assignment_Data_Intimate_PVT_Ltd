@@ -3,9 +3,9 @@ import { FaTachometerAlt, FaRegSun, FaWrench, FaStickyNote, FaRegChartBar, FaReg
 
 const Sidebar = () => {
     return (
-        <div className='bg-[#4E73DF] px-[25px] h-screen'>
+        <div className='bg-[#4E73DF] px-[25px] h-screen w-98'>
             <div className='px-[15px] py-[30px] flex items-center justify-center border-b-[1px] border-[#EDEDED]/[0.3]'>
-                <h1 className='text-white text-[20px] leading-[24px] font-extrabold cursor-pointer'>Admin panel</h1>
+                <h1 className='text-white text-[20px] leading-[24px] font-extrabold cursor-pointer'>SB ADMIN </h1>
             </div>
             <div className='flex items-center gap-[15px] py-[20px] border-b-[1px] border-[#EDEDED]/[0.3] cursor-pointer'>
                 <FaTachometerAlt color='white' />

@@ -2,7 +2,6 @@ import React from 'react'
 import { FaRegCalendarMinus, FaEllipsisV } from "react-icons/fa"
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, PieChart, Pie, Cell, Sector } from 'recharts';
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, } from 'recharts';
-import PieComponent from './PieComponent';
 import { Progress } from 'antd';
 import error from "../assets/error.png"
 import undraw from "@/assets/undraw_posting_photo.svg"
@@ -264,7 +263,6 @@ const Main = () => {
                              components and custom utility classes.</p>
                              <p className='mt-[35px] text-semibold text-gray-500 mb-5' >Before working with this theme, you should become
                               familiar with the Bootstrap framework, especially the utility classes.</p>
-                            
                         </div>
                     </div>
                 </div>
