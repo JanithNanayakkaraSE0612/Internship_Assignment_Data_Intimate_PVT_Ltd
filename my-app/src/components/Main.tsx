@@ -5,6 +5,7 @@ import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, } from '
 import PieComponent from './PieComponent';
 import { Progress } from 'antd';
 import error from "../assets/error.png"
+import undraw from "@/assets/undraw_posting_photo.svg"
 
 
 
@@ -189,18 +190,18 @@ const Main = () => {
                     </div>
                     <div className='pl-[35px] flex items-center justify-center h-[100%]'>
                         <div>
-                            {/* <img src={error} alt="" className='transform scale-[135%]' /> */}
-                            <p className='mt-[35px] text-semibold text-gray-500 mb-5' >Add some quality, svg illustrations to your 
+                            <img src={undraw} alt="" className='w-96 h-44 ml-12 mt-1 mb-3 transform scale-[135%]' />
+                            <p className='mt-[35px] text-semibold text-gray-500 mb-1' >Add some quality, svg illustrations to your 
                             project courtesy of unDraw, a constantly updated collection of beautiful svg images that you can use
                              completely free and without attribution!</p>
-                             <a className='text-blue-600' href="https://undraw.co/">Browse Illustrations on unDraw →</a>
+                             <a className='text-blue-600 mb-1' href="https://undraw.co/">Browse Illustrations on unDraw →</a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div className='flex mt-[22px] h-[40vh] w-full gap-[30px]'>
-                <div className=' basis-[55%]  cursor-pointer rounded-[4px] flex flex-row'>
+                <div className=' basis-[55%]  cursor-pointer rounded-[4px]  flex-row'>
                                     <div className="bg-[#4e73df] h-20 w-5/12 rounded-[4px] shadow-md">
                                         <div className="text-white pl-6 pt-5">
                                             Primary
