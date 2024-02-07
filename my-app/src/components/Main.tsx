@@ -199,65 +199,50 @@ const Main = () => {
                 </div>
             </div>
 
-            <div className='flex mt-[22px] h-full w-full gap-[30px]'>
-                <div className='basis-[55%] cursor-pointer rounded-[4px]'>
-                <div className="col-lg-6 mb-4">
+            <div className='flex mt-[22px] h-[40vh] w-full gap-[30px]'>
+                <div className=' basis-[55%]  cursor-pointer rounded-[4px] flex flex-row'>
                                     <div className="bg-[#4e73df] h-20 w-5/12 rounded-[4px] shadow-md">
                                         <div className="text-white pl-6 pt-5">
                                             Primary
                                             <p className=' pl-0 pt-0'>#4e73df</p>
                               </div>
-                          </div>
                       </div>
-                      <div className="col-lg-6 mb-4">
                                     <div className="bg-[#1cc88a] h-20 w-5/12 rounded-[4px] shadow-md">
                                         <div className="text-white pl-6 pt-5">
                                         Success
-                                            <p className=' pl-0 pt-0'>#1cc88a</p>
+                                          <p className=' pl-0 pt-0'>#1cc88a</p>
                               </div>
                           </div>
-                      </div>
-                      <div className="col-lg-6 mb-4">
                                     <div className="bg-[#36b9cc] h-20 w-5/12 rounded-[4px] shadow-md">
                                         <div className="text-white pl-6 pt-5">
                                             Info
                                             <p className=' pl-0 pt-0'>#36b9cc</p>
                               </div>
                           </div>
-                      </div>
-                      <div className="col-lg-6 mb-4">
                                     <div className="bg-[#f6c23e] h-20 w-5/12 rounded-[4px] shadow-md">
                                         <div className="text-white pl-6 pt-5">
                                             Warning
                                             <p className=' pl-0 pt-0'>#f6c23e</p>
                               </div>
                           </div>
-                      </div>
-                      <div className="col-lg-6 mb-4">
                                     <div className="bg-[#e74a3b] h-20 w-5/12 rounded-[4px] shadow-md">
                                         <div className="text-white pl-6 pt-5">
                                             Danger
                                             <p className=' pl-0 pt-0'>#e74a3b</p>
                               </div>
                           </div>
-                      </div>
-                      <div className="col-lg-6 mb-4">
                                     <div className="bg-[#858796] h-20 w-5/12 rounded-[4px] shadow-md">
                                         <div className="text-white pl-6 pt-5">
                                         Secondary
                                             <p className=' pl-0 pt-0'>#858796</p>
                               </div>
                           </div>
-                      </div>
-                      <div className="col-lg-6 mb-4">
                                     <div className="bg-[#f8f9fc] h-20 w-5/12 rounded-[4px] shadow-md">
                                         <div className="text-gray-500 pl-6 pt-5">
                                             Light
                                             <p className=' pl-0 pt-0'>#f8f9fc</p>
                               </div>
                           </div>
-                      </div>
-                      <div className="col-lg-6 mb-4">
                                     <div className="bg-[#5a5c69] h-20 w-5/12 rounded-[4px] shadow-md">
                                         <div className="text-white pl-6 pt-5">
                                             Dark
@@ -265,7 +250,6 @@ const Main = () => {
                                                         </p>
                               </div>
                           </div>
-                      </div>
                 </div>
                 <div className='basis-[45%] border bg-white shadow-md cursor-pointer rounded-[4px]'>
                     <div className='bg-[#F8F9FC] flex items-center justify-between py-[15px] px-[20px] border-b-[1px] border-[#EDEDED]'>
