@@ -3,6 +3,8 @@ import React ,{useState} from "react"
 import { FaSearch, FaEnvelope, FaRegBell } from "react-icons/fa"
 // import profile from "@/assets/profile3.avif"
 import Main from "./Main";
+import Footer from "./Footer";
+import Image from "next/image";
 
 const Dashboardview = () => {
     const [open, setOpen] = useState(false)
@@ -49,6 +51,7 @@ const Dashboardview = () => {
                 </div>
             </div>
             <Main/>
+            <Footer/>
         </div>
        
     )
