@@ -1,15 +1,13 @@
 import React from 'react'
 import { FaRegCalendarMinus, FaEllipsisV } from "react-icons/fa"
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, PieChart, Pie, Cell, Sector } from 'recharts';
-import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, } from 'recharts';
 import { Progress } from 'antd';
-import error from "../assets/error.png"
-import undraw from "@/assets/undraw_posting_photo.svg"
-import Image from 'next/image';
 import {FaClipboardList} from "react-icons/fa";
 import {TiMessages} from "react-icons/ti";
 import {MdOutlineAttachMoney} from "react-icons/md";
 import {FaCalendar} from "react-icons/fa";
+import Image from 'next/image'
+import PieComponent from './PieComponent';
 
 const datas = [
     {
@@ -141,7 +139,7 @@ const Main = () => {
                     </div>
 
             </div>
-            <div className='flex mt-[22px] w-full gap-[30px]'>
+            {/* <div className='flex mt-[22px] w-full gap-[30px]'>
                 <div className='basis-[70%] border bg-white shadow-md cursor-pointer rounded-[4px]'>
                     <div className='bg-[#F8F9FC] flex items-center justify-between py-[15px] px-[20px] border-b-[1px] border-[#EDEDED] mb-[20px]'>
                         <h2 className='text-[#4e73df] text-[16px] leading-[19px] font-bold'>Earnings Overview</h2>
@@ -149,8 +147,8 @@ const Main = () => {
                     </div>
 
                     <div className="w-full">
-                        {/* <canvas id="myAreaChart"></canvas> */}
-                        {/* <Line options={options} data={data} /> */}
+                        <canvas id="myAreaChart"></canvas> 
+                         <Line options={options} data={data} /> 
                         <LineChart
                             width={750}
                             height={300}
@@ -180,14 +178,68 @@ const Main = () => {
                     </div>
                     <div className='pl-[35px]'>
 
-                        {/* <PieComponent /> */}
-                        <canvas id="myBarChart"></canvas>
-                        {
-
-                        }
+                        <PieChart1 />
+                       
                     </div>
                 </div>
-            </div>
+            </div> */}
+
+              {/*    charts*/}
+
+              <div className={"flex flex-row w-full"}>
+
+{/*Inline*/}
+<div
+    className={"flex flex-col w-7/12 h-auto bg-[#f8f9fc] m-2 shadow-2xl border-e-gray-300 p-2 rounded-lg"}>
+
+    <div className={"flex flex-row w-full"}>
+        <h1 className={"text-[#4e73df] w-11/12 font-semibold p-4"}>Earnings Overview</h1>
+        <div className={"flex flex-row w-1/12 text-gray-600 justify-end items-center opacity-50"}>
+            <button><FaEllipsisV/></button>
+        </div>
+    </div>
+    <hr className={"opacity-70"}/>
+    <LineChart
+                            width={750}
+                            height={300}
+                            data={datas}
+                            margin={{
+                                top: 5,
+                                right: 30,
+                                left: 20,
+                                bottom: 5,
+                            }}
+                        >
+                            <CartesianGrid strokeDasharray="3 3" />
+                            <XAxis dataKey="name" />
+                            <YAxis />
+                            <Tooltip />
+                            <Legend />
+                            <Line type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />
+                            <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+                        </LineChart>
+   
+</div>
+
+{/*pie*/}
+<div
+    className={"flex flex-col w-5/12 h-auto bg-[#f8f9fc] m-2 shadow-2xl border-e-gray-300 p-2 rounded-lg"}>
+
+    <div className={"flex flex-row w-full"}>
+        <h1 className={"text-[#4e73df] w-11/12 font-semibold p-4"}>Revenue Sources</h1>
+        <div className={"flex flex-row w-1/12 text-gray-600 justify-end items-center opacity-50"}>
+            <button><FaEllipsisV/></button>
+        </div>
+    </div>
+
+    <hr className={"opacity-70"}/>
+
+    <PieComponent/>
+
+
+</div>
+
+</div>
             <div className='flex mt-[22px] w-full gap-[30px]'>
                 <div className='basis-[55%] border bg-white shadow-md cursor-pointer rounded-[4px]'>
                     <div className='bg-[#F8F9FC] flex items-center justify-between py-[15px] px-[20px] border-b-[1px] border-[#EDEDED]'>
@@ -227,16 +279,15 @@ const Main = () => {
                         <h2 className='text-[#4e73df] text-[16px] leading-[19px] font-bold'> Illustrations</h2>
                         <FaEllipsisV color="gray" className='cursor-pointer' />
                     </div>
-                    <div className='pl-[35px] flex items-center justify-center h-[100%]'>
-                        <div>
-                        <Image
-                            src=""
-                            width={500}
-                            height={500}
+                    <div className='pl-[35px] flex flex-col items-center justify-center h-[100%]'>
+                     <Image
+                            src="/undraw_posting_photo.svg"
+                            width={300}
+                            height={230}
                             alt="Picture of the author"
                         />
-                            {/* <img src={undraw} alt="" className='w-96 h-44 ml-12 mt-1 mb-3 transform scale-[135%]' /> */}
-                            <p className='mt-[35px] text-semibold text-gray-500 mb-1' >Add some quality, svg illustrations to your 
+                        <div>
+                            <p className='mt-[25px] text-semibold text-gray-500 mb-1 pr-4' >Add some quality, svg illustrations to your 
                             project courtesy of unDraw, a constantly updated collection of beautiful svg images that you can use
                              completely free and without attribution!</p>
                              <a className='text-blue-600 mb-1' href="https://undraw.co/">Browse Illustrations on unDraw →</a>
@@ -302,12 +353,12 @@ const Main = () => {
                         <h2 className='text-[#4e73df] text-[16px] leading-[19px] font-bold'> Development Approach</h2>
                         <FaEllipsisV color="gray" className='cursor-pointer' />
                     </div>
-                    <div className='pl-[35px] flex items-center justify-center h-[100%]'>
-                        <div>
-                            <p className='text-semibold text-gray-500 mb-5' >SB Admin 2 makes extensive use of Bootstrap 4 utility
+                    <div className='pl-[25px] flex items-center justify-center h-[100%]'>
+                        <div className='p-0'>
+                            <p className='text-semibold mt-0 text-gray-500 mb-5 pr-5' >SB Admin 2 makes extensive use of Bootstrap 4 utility
                              classes in order to reduce CSS bloat and poor page performance. Custom CSS classes are used to create custom 
                              components and custom utility classes.</p>
-                             <p className='mt-[35px] text-semibold text-gray-500 mb-5' >Before working with this theme, you should become
+                             <p className='mt-[10px] text-semibold text-gray-500 mb-5' >Before working with this theme, you should become
                               familiar with the Bootstrap framework, especially the utility classes.</p>
                         </div>
                     </div>
