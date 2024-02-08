@@ -5,9 +5,11 @@ import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, } from '
 import { Progress } from 'antd';
 import error from "../assets/error.png"
 import undraw from "@/assets/undraw_posting_photo.svg"
-
-
-
+import Image from 'next/image';
+import {FaClipboardList} from "react-icons/fa";
+import {TiMessages} from "react-icons/ti";
+import {MdOutlineAttachMoney} from "react-icons/md";
+import {FaCalendar} from "react-icons/fa";
 
 const datas = [
     {
@@ -69,36 +71,74 @@ const Main = () => {
                 <button className='bg-[#2E59D9] h-[32px] rounded-[3px] text-white flex items-center justify-center px-[8px]'>Generate Report</button>
             </div>
             <div className='grid grid-cols-4 gap-[30px] mt-[25px] pb-[15px]'>
-                <div className=' h-[100px] rounded-[8px] bg-white border-l-[4px] border-[#4E73DF] flex items-center justify-between px-[30px] cursor-pointer hover:shadow-lg transform hover:scale-[103%] transition duration-300 ease-out'>
+                {/* <div className=' h-[100px] rounded-[8px] bg-white border-l-[4px] border-[#4E73DF] flex items-center justify-between px-[30px] cursor-pointer hover:shadow-lg transform hover:scale-[103%] transition duration-300 ease-out'>
                     <div>
                         <h2 className='text-[#B589DF] text-[11px] leading-[17px] font-bold'>EARNINGS (MONTHLY)</h2>
                         <h1 className='text-[20px] leading-[24px] font-bold text-[#5a5c69] mt-[5px]'>$40,000</h1>
                     </div>
                     <FaRegCalendarMinus fontSize={28} color="" />
 
-                </div>
-                <div className=' h-[100px] rounded-[8px] bg-white border-l-[4px] border-[#1CC88A] flex items-center justify-between px-[30px] cursor-pointer hover:shadow-lg transform hover:scale-[103%] transition duration-300 ease-out'>
-                    <div>
-                        <h2 className='text-[#1cc88a] text-[11px] leading-[17px] font-bold'>
-                            EARNINGS (ANNUAL)</h2>
-                        <h1 className='text-[20px] leading-[24px] font-bold text-[#5a5c69] mt-[5px]'>$240,000</h1>
+                </div> */}
+                         <div
+                        className="flex  w-full h-28 p-4 border-l-8 border-[#4e73df] rounded-lg shadow-2xl bg-white border-e-gray-300">
+                        <div className={"flex flex-wrap w-10/12 "}>
+                            <p className={"flex-row w-full text-[#4e73df] text-[14px] "}>EARNINGS (MONTHLY)</p>
+                            <p className={"text-gray-600 font-bold"}>$40,000</p>
+                        </div>
+
+                        <div className={"flex w-2/12 text-gray-600 text-4xl justify-center items-center opacity-50"}>
+                            <FaCalendar/>
+                        </div>
                     </div>
-                    <FaRegCalendarMinus fontSize={28} />
-                </div>
-                <div className=' h-[100px] rounded-[8px] bg-white border-l-[4px] border-[#36B9CC] flex items-center justify-between px-[30px] cursor-pointer hover:shadow-lg transform hover:scale-[103%] transition duration-300 ease-out'>
-                    <div>
-                        <h2 className='text-[#1cc88a] text-[11px] leading-[17px] font-bold'>TASKS </h2>
-                        <h1 className='text-[20px] leading-[24px] font-bold text-[#5a5c69] mt-[5px]'>50%</h1>
+                <div
+                        className="flex w-full h-28 p-4 border-l-8 border-[#1cc88a] rounded-lg shadow-2xl bg-white border-e-gray-300">
+                        <div className={"flex flex-wrap w-10/12 "}>
+                            <p className={" flex-row w-full text-[#1cc88a] text-[14px] "}>EARNINGS (ANNUAL)</p>
+                            <p className={"text-gray-600 font-bold"}>$215,000</p>
+                        </div>
+
+                        <div className={"flex w-2/12 text-gray-600 text-4xl justify-center items-center opacity-50"}>
+                            <MdOutlineAttachMoney/>
+                        </div>
                     </div>
-                    <FaRegCalendarMinus fontSize={28} />
-                </div>
-                <div className=' h-[100px] rounded-[8px] bg-white border-l-[4px] border-[#F6C23E] flex items-center justify-between px-[30px] cursor-pointer hover:shadow-lg transform hover:scale-[103%] transition duration-300 ease-out'>
-                    <div>
-                        <h2 className='text-[#1cc88a] text-[11px] leading-[17px] font-bold'>PENDING REQUESTS</h2>
-                        <h1 className='text-[20px] leading-[24px] font-bold text-[#5a5c69] mt-[5px]'>$240,000</h1>
+            
+                   <div
+                        className="flex w-full h-28 p-4 border-l-8 border-[#36b9cc] rounded-lg shadow-2xl bg-white border-e-gray-300">
+
+                        <div className={"flex flex-wrap w-10/12"}>
+                            <p className={"flex-row w-full text-[#36b9cc] text-[14px]"}>TASKS</p>
+
+                            <div className={"flex flex-row w-full items-center text-gray-600 font-bold"}>
+                                <div className="w-4/12 flex items-center">50%</div>
+                                <div className="w-6/12">
+                                    <div className="rounded-xl shadow-sm overflow-hidden p-1 bg-gray-100 mr-2">
+                                        <div className="relative h-1 flex items-center justify-center">
+                                            <div
+                                                className="absolute top-0 bottom-0 left-0 rounded-lg w-[50%] bg-[#36b9cc]"></div>
+                                            <div className="relative text-blue-900 font-medium text-sm"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div className={"flex w-2/12 text-gray-600 text-4xl justify-center items-center opacity-50"}>
+                            <FaClipboardList/>
+                        </div>
                     </div>
-                    <FaRegCalendarMinus fontSize={28} />
-                </div>
+    
+                   <div
+                        className="flex w-full h-28 p-4 border-l-8 border-[#f6c23e] rounded-lg shadow-2xl bg-white border-e-gray-300">
+                        <div className={"flex flex-wrap w-10/12 "}>
+                            <p className={"flex-row w-full text-[#f6c23e] text-[14px]  "}>PENDING REQUESTS</p>
+                            <p className={"flex-row w-full text-gray-600 font-bold "}>18</p>
+                        </div>
+
+                        <div className={"flex w-2/12 text-gray-600 text-4xl justify-center items-center opacity-50"}>
+                            <TiMessages/>
+                        </div>
+                    </div>
 
             </div>
             <div className='flex mt-[22px] w-full gap-[30px]'>
@@ -189,7 +229,13 @@ const Main = () => {
                     </div>
                     <div className='pl-[35px] flex items-center justify-center h-[100%]'>
                         <div>
-                            <img src={undraw} alt="" className='w-96 h-44 ml-12 mt-1 mb-3 transform scale-[135%]' />
+                        <Image
+                            src=""
+                            width={500}
+                            height={500}
+                            alt="Picture of the author"
+                        />
+                            {/* <img src={undraw} alt="" className='w-96 h-44 ml-12 mt-1 mb-3 transform scale-[135%]' /> */}
                             <p className='mt-[35px] text-semibold text-gray-500 mb-1' >Add some quality, svg illustrations to your 
                             project courtesy of unDraw, a constantly updated collection of beautiful svg images that you can use
                              completely free and without attribution!</p>
