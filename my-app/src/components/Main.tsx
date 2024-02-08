@@ -200,7 +200,7 @@ const Main = () => {
     </div>
     <hr className={"opacity-70"}/>
     <LineChart
-                            width={750}
+                            width={650}
                             height={300}
                             data={datas}
                             margin={{
